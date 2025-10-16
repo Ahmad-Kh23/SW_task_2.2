@@ -1,10 +1,8 @@
-jobs:
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Testing..."
+name: Simple Build
 
+on: push
+
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
